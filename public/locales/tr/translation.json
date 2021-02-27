@@ -1,0 +1,108 @@
+{  
+    "Navbar" :{
+      "1":"Anasayfa",
+      "2":"Şirketler",
+      "3":"Popüler Şirketler",
+      "4":"Profil",
+      "5": "Hakkımızda",
+      "6":"İletişim"
+    }, 
+
+    "Dashboard" : {
+        "1" : "Ara...",
+        "2" : "Çıkış Yap"
+    },
+
+    "Companies" :
+    {
+     "title" : "Şirketler",
+     "stars": "Yıldızlar",
+     "description" : "Deneyimini Paylaş",
+     "button" : "Oy Ver"
+    },
+
+
+
+    "CompanyPage" : {
+        "title" : "Deneyimini Paylaş",
+        "stars": "Yıldızlar",
+        "card" :[{
+            "img": "https://images.pexels.com/photos/1367272/pexels-photo-1367272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "category": "İş",
+            "q" : "İşinizden memnun musunuz ?",
+            "subTitle": "Bu Soruya Oy Ver"
+        },
+        {
+            "img": "https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "category": "Takım",
+            "q" : "Ekibinizin birlikte iyi çalıştığını düşünüyor musunuz?",
+            "subTitle": "Bu Soruya Oy Ver"
+        },
+        {
+            "img": "https://images.pexels.com/photos/5648076/pexels-photo-5648076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "category": "Çalışma Saatleri",
+            "q" : "Çalışma saatlerinden memnun musunuz?",
+            "subTitle": "Bu Soruya Oy Ver"
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1581447109200-bf2769116351?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "category": "Kişisel Gelişim",
+            "q" : "Şirkette kendinizi geliştirebileceğiniz fırsatlar sunduklarını düşünüyor musunuz?",
+            "subTitle": "Bu Soruya Oy Ver"
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "category": "Maaş",
+            "q" : "İşiniz için maaşın yeterli ve zamanında aldığınızı düşünüyor musunuz? ",
+            "subTitle": "Bu Soruya Oy Ver"
+        }],
+        "button": {
+            "text": "Gönder"
+    }},
+
+    "PopularCompanies": {
+     "title" : "Popüler Şirketler",
+     "stars": "Yıldızlar",
+     "description" : "Deneyimini Paylaş",
+     "button" : "Oyla"
+    },
+ 
+    "Profile": {
+        "button" : "Düzenle",
+        "1": "İsim",
+        "2": "Soyisim",
+        "3": "Email Addres",
+        "4": "Yeni şifreyi giriniz",
+        "5":"Tekrar yeni şifreyi giriniz"
+       },
+ 
+    "About" : [
+        {
+         "title" : "VOTING Hakkında",
+         "text" :"KODLUYORUZ’un “teknolojiye hazırlanan bir gençlik ve daha iyi bir gelecek” çağrısını duymuş ve Adana Full Stack Web Development Bootcamp’inde yolları kesişen kendini geliştirmek isteyen bir ekibiz."
+        },
+        {
+        "title" :"VOTING Nedir ? ",
+        "text" : "Şirket oylama uygulaması olarak adlandırabiliriz.Sosyal medya da çalışanların şirketler hakkında yorumlarını ya da yakınımızda olan insanların şirketlerinden memnun olmadıklarını duyduk. Belkide o şirkete girmek için çok çalıştı çok emek sarfetti memnun kalamayacağını düşünemedi ya da orada çalışanlardan bilgi alamadı. Bizde tam olarak bu sorunu ele alarak o şirketin çalışma koşullarından, çalışan haklarını ne kadar gözettiğine kadar bazı sorular hazırlayarak daha önceden çalışmış ya da hala çalışmakta olan insanlardan çalıştığı şirketler hakkında yıldızlarla puan vermesini sağlayarak oraya girmek isteyen kişilere bir nebzede olsun yardımcı olmak istedik."
+        },
+        {
+         "title" : "Front-End",
+         "text" : "Bu proje de hedeflediklerimizi yapabilmemiz için araştırmalarımız sonucu projemiz için en iyi sonucu Material-UI ile tasarlayabileceğimize karar verdik. Projemize zaman konusunda avantaj sağlaması için React kütüphanesini kullanıp sayfalar arası geçişleri React-Router ile gezinebileceğimize karar verdik. Şuan yapabildiğiniz ve görebildiğiniz her şey iki haftalık hedef sonucunda görebiliyorsunuz projemizi dahada geliştirerek ileriye taşımayı hedefliyouruz. İlgilendiğiniz için VOTING ekibi olarak teşekkür ederiz."
+        },
+        {
+        "title" : "Back-End",
+        "text" : "Back end için node.js express.js mongoose ve mongodb tercih ettik. İlk olarak node.js ile gelen request ve response için yapıyı oluşturduk. Daha sonra express yönlendirme işlemini gerçekleştirdik. Mongoose ile veritabanımıza kaydedilecek olan verilerin şemasını oluşturduk. Bu şemalara göre kaydetme işlemini gerçekleştirecek fonksiyonları yazdık ardından veritabanımızdan çekeceğimiz veriler için fonksiyonlar oluşturduk ve apiye bağladık."
+        }
+    ],
+    "ContactUs" : {
+        "title": "İletişim"
+    }
+    ,
+    "Footer" : {
+     "text": "Telif hakkı © "
+   },
+   "NotFound" : {
+    "text": "Oops! SAYFA BULUNAMADI"
+}
+  
+ }
