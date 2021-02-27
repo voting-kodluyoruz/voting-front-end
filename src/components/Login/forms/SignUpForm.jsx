@@ -41,7 +41,7 @@ const SignUpForm = () => {
       email: signUpEmail,
       password: signUpPassword,
     };
-    fetch("http://localhost:5000/users", {
+    fetch("https://voting-back-end.herokuapp.com/users", {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
