@@ -12,7 +12,7 @@ import BusinessTwoToneIcon from "@material-ui/icons/BusinessTwoTone";
 
 const Home = (props) => {
   const [datas, setDatas] = useState([])
-  useEffect(() =>fetch("http://localhost:5000/companies")
+  useEffect(() =>fetch("https://voting-back-end.herokuapp.com/companies")
       .then(response=>response.json())
       .then(data=>setDatas(data.reverse()))
   ,[])
