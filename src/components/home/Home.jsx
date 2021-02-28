@@ -43,7 +43,7 @@ const Home = (props) => {
         {datas.map((comment, index) => (
           <Grid item xl={10} lg={10} md={10} sm={12} xs={12} key={comment._id}>
             <Card className={classes.root}>
-              <Grid lg={12} md={12} sm={12} xs={8}>
+              <Grid item lg={12} md={12} sm={12} xs={8}>
                 <CardContent className={classes.controls}>
                   <Grid
                     item
