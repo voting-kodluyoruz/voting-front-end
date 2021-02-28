@@ -10,11 +10,14 @@ import FilterNoneIcon from "@material-ui/icons/FilterNone";
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import Divider from "@material-ui/core/Divider";
 const mainListItems = (props) => {
-
   const { t } = useTranslation();
+  const [selectedIndex, setSelectedIndex] = React.useState();
 
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
   return (
     <>
       <div>
@@ -24,7 +27,12 @@ const mainListItems = (props) => {
           style={{ color: "black", textDecoration: "none" }}
           to="/home"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            selected={selectedIndex === 0}
+            style={{ padding: 18 }}
+            onClick={(event) => handleListItemClick(event, 0)}
+          >
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
@@ -37,11 +45,16 @@ const mainListItems = (props) => {
           style={{ color: "black", textDecoration: "none" }}
           to="/companies"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            style={{ padding: 18 }}
+            selected={selectedIndex === 1}
+            onClick={(event) => handleListItemClick(event, 1)}
+          >
             <ListItemIcon>
               <BarChartIcon />
             </ListItemIcon>
-            <ListItemText primary={t("Navbar.2")}  />
+            <ListItemText primary={t("Navbar.2")} />
           </ListItem>
         </Link>
         {/* Popular Companies */}
@@ -50,32 +63,32 @@ const mainListItems = (props) => {
           style={{ color: "black", textDecoration: "none" }}
           to="/popular-companies"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            style={{ padding: 18 }}
+            selected={selectedIndex === 2}
+            onClick={(event) => handleListItemClick(event, 2)}
+          >
             <ListItemIcon>
               <StarIcon />
             </ListItemIcon>
-            <ListItemText primary={t("Navbar.3")}  />
+            <ListItemText primary={t("Navbar.3")} />
           </ListItem>
         </Link>
-      </div>
-    </>
-  );
-};
 
-const secondaryListItems = (props) => {
-  const { t } = useTranslation();
-
-  return (
-    <>
-      <div>
+        <Divider />
         {/* Profile */}
-
         <Link
           activeclassname="is-active"
           style={{ color: "black", textDecoration: "none" }}
           to="/profile"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            selected={selectedIndex === 3}
+            style={{ padding: 18 }}
+            onClick={(event) => handleListItemClick(event, 3)}
+          >
             <ListItemIcon>
               <AccountCircleIcon />
             </ListItemIcon>
@@ -88,7 +101,12 @@ const secondaryListItems = (props) => {
           style={{ color: "black", textDecoration: "none" }}
           to="/about"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            selected={selectedIndex === 4}
+            style={{ padding: 18 }}
+            onClick={(event) => handleListItemClick(event, 4)}
+          >
             <ListItemIcon>
               <FilterNoneIcon />
             </ListItemIcon>
@@ -101,7 +119,12 @@ const secondaryListItems = (props) => {
           style={{ color: "black", textDecoration: "none" }}
           to="/contact"
         >
-          <ListItem button style={{ padding: 15 }}>
+          <ListItem
+            button
+            selected={selectedIndex === 5}
+            style={{ padding: 18 }}
+            onClick={(event) => handleListItemClick(event, 5)}
+          >
             <ListItemIcon>
               <DescriptionOutlinedIcon />
             </ListItemIcon>
@@ -113,7 +136,22 @@ const secondaryListItems = (props) => {
   );
 };
 
-export {
-  mainListItems,
-  secondaryListItems
-}
+// const secondaryListItems = (props) => {
+//   const { t } = useTranslation();
+//   const [selectedIndex, setSelectedIndex] = React.useState();
+
+//   const handleListItemClick = (event, index) => {
+//     setSelectedIndex(index);
+//   };
+//   return (
+//     <>
+//       <div>
+//         {/* Profile */}
+
+       
+//       </div>
+//     </>
+//   );
+// };
+
+export default mainListItems;

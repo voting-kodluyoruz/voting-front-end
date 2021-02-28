@@ -13,7 +13,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import { mainListItems, secondaryListItems } from "./ListItems";
+import mainListItems from "./ListItems";
 import SearchIcon from "@material-ui/icons/Search";
 import InputBase from "@material-ui/core/InputBase";
 import Button from "@material-ui/core/Button";
@@ -423,8 +423,6 @@ export default function Dashboard() {
           </div>
           <Divider />
           <List>{mainListItems()}</List>
-          <Divider />
-          <List>{secondaryListItems()}</List>
         </Drawer>
 
         <main className={classes.content}>

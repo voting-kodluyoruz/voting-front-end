@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import { makeStyles } from "@material-ui/core/styles";
@@ -53,8 +52,7 @@ const Home = (props) => {
                     sm={12}
                     xs={8}
                   >
-                    <Avatar className={classes.blue}>
-                      V
+                    <Avatar className={classes.blue}>                      
                     </Avatar>
 
                   </Grid>
