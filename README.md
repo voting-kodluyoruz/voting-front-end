@@ -8,12 +8,12 @@ and they can get some ideas. Current and previous employees can rate that compan
 then users can rate few questions about the companies. 
 
 #### This app has : 
-* Login - Register
-* Search and List Companies
-* Rate Company
-* Popular Companies
-* Each company's average rating
-* See last rating results 
+- [x] Login - Register
+- [x] Search and List Companies
+- [x] Rate Company
+- [x] Popular Companies
+- [x] Each company's average rating
+- [x] See last rating results 
 
 
 ### Technologies
@@ -29,9 +29,9 @@ AOS   |
 I18next  |       | 
 
 ### What is Next ?
-* Specific questions by job 
-* Synchronize with Linkedin 
-* Company accounts
+- [ ] Specific questions by job 
+- [ ] Synchronize with Linkedin 
+- [ ] Company accounts
 
 
 ##  Installation and Setup Instructions
