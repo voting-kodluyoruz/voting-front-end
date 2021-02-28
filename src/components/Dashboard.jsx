@@ -42,7 +42,7 @@ import Home from "./home/Home";
 import Profile from "./Profile/Profile";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import ListIcon from '@material-ui/icons/List';
+import ListIcon from "@material-ui/icons/List";
 
 const drawerWidth = 240;
 
@@ -249,6 +249,24 @@ export default function Dashboard() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
+      <MenuItem>
+        <Button
+          onClick={() => handleClick("en")}
+          style={{ backgroundColor: "#eef3f4" }}
+        >
+          <img src="https://img.icons8.com/emoji/20/000000/united-kingdom-emoji.png" />
+        </Button>
+      </MenuItem>
+
+      <MenuItem>
+        <Button
+          onClick={() => handleClick("tr")}
+          style={{ backgroundColor: "#eef3f4" }}
+        >
+          <img src="https://img.icons8.com/emoji/20/000000/turkey-flag-emoji.png" />
+        </Button>
+      </MenuItem>
+
       <MenuItem
         onClick={() => {
           localStorage.removeItem("id");
@@ -261,25 +279,6 @@ export default function Dashboard() {
       >
         {t("Dashboard.2")}
       </MenuItem>
-
-      <MenuItem>
-        <Button
-          onClick={() => handleClick("en")}
-          style={{ backgroundColor: "#eef3f4" }}
-        >
-          <img src="https://img.icons8.com/emoji/20/000000/united-kingdom-emoji.png"/>
-        </Button>
-      </MenuItem>
-
-      <MenuItem>
-        <Button
-          onClick={() => handleClick("tr")}
-          style={{ backgroundColor: "#eef3f4" }}
-        >
-          <img src="https://img.icons8.com/emoji/20/000000/turkey-flag-emoji.png"/> 
-        </Button>
-      </MenuItem>
-
     </Menu>
   );
   const mobileMenuId = "primary-search-account-menu-mobile";
@@ -293,6 +292,24 @@ export default function Dashboard() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
+      <MenuItem>
+        <Button
+          onClick={() => handleClick("en")}
+          style={{ backgroundColor: "#eef3f4" }}
+        >
+          <img src="https://img.icons8.com/emoji/20/000000/united-kingdom-emoji.png" />
+        </Button>
+      </MenuItem>
+
+      <MenuItem>
+        <Button
+          onClick={() => handleClick("tr")}
+          style={{ backgroundColor: "#eef3f4" }}
+        >
+          <img src="https://img.icons8.com/emoji/20/000000/turkey-flag-emoji.png" />
+        </Button>
+      </MenuItem>
+
       <MenuItem
         onClick={handleProfileMenuOpen}
         style={{ display: "flex", flexDirection: "column" }}
@@ -303,26 +320,8 @@ export default function Dashboard() {
           aria-haspopup="true"
           color="inherit"
         >
-          <ExitToAppIcon  style={{ backgroundColor: "#eef3f4" }}/>
+          <ExitToAppIcon style={{ backgroundColor: "#eef3f4" }} />
         </IconButton>
-      </MenuItem>
-
-      <MenuItem>
-        <Button
-          onClick={() => handleClick("en")}
-          style={{ backgroundColor: "#eef3f4" }}
-        >
-          <img src="https://img.icons8.com/emoji/20/000000/united-kingdom-emoji.png"/>
-        </Button>
-      </MenuItem>
-
-      <MenuItem>
-        <Button
-          onClick={() => handleClick("tr")}
-          style={{ backgroundColor: "#eef3f4" }}
-        >
-          <img src="https://img.icons8.com/emoji/20/000000/turkey-flag-emoji.png"/> 
-        </Button>
       </MenuItem>
     </Menu>
   );

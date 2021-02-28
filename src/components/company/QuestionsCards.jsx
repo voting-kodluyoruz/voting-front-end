@@ -39,8 +39,8 @@ const QuestionCards = (props) => {
       textAlign: "justify"
     },
     image: {
-      width: 300,
-      height: 230,
+      width: 250,
+      height: 200,
       border: "1.5px solid black",
       borderRadius: 10,
       marginLeft: 5
@@ -72,8 +72,6 @@ const QuestionCards = (props) => {
   }, [])
 
   function handleSubmit(array) {
-   // console.log(array)
-    
     // if(array[0] === undefined || array[1] === undefined || array[2] === undefined 
     //   || array[3] === undefined || array[4] === undefined ){
     //     alertify.error('Rating is Fail');
