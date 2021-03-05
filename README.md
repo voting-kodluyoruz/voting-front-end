@@ -1,6 +1,6 @@
 ## Voting |  Company Rating App
 -------------
-### WEBSITE : https://movie-tracker-reactapp.netlify.app
+### WEBSITE : https://voting-company.netlify.app
 
 ### What is  Voting ?
 It is a company rating app. We all know sometimes employees not satisfied with their company. At this point, they can check the company stars on this app 
